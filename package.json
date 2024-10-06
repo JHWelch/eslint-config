@@ -1,0 +1,11 @@
+{
+  "name": "@jhwelch/eslint-config",
+  "version": "1.0.0",
+  "description": "JHWelch personal ESLint Config",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jordan Welch",
+  "license": "MIT"
+}
