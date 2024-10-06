@@ -6,8 +6,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/JHWelch/eslint-config.git"
+  },
   "author": "Jordan Welch",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JHWelch/eslint-config/issues"
+  },
+  "homepage": "https://github.com/JHWelch/eslint-config#readme",
   "dependencies": {
     "@eslint/js": "^9.12.0",
     "@stylistic/eslint-plugin": "^2.9.0",
