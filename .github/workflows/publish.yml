@@ -43,6 +43,7 @@ jobs:
       run: |
         mkdir dist
         cp eslint.config.mjs dist
+        cp package.json dist
 
     - run: npm publish
       working-directory: dist
