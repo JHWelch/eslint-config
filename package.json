@@ -4,7 +4,9 @@
   "description": "JHWelch personal ESLint Config",
   "main": "eslint.config.mjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint",
+    "fix": "npm run lint -- --fix"
   },
   "repository": {
     "type": "git",
@@ -25,5 +27,8 @@
   },
   "peerDependencies": {
     "eslint": ">= 9"
+  },
+  "devDependencies": {
+    "eslint": "^9.12.0"
   }
 }
