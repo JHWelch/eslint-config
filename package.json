@@ -2,10 +2,20 @@
   "name": "@jhwelch/eslint-config",
   "version": "1.0.0",
   "description": "JHWelch personal ESLint Config",
-  "main": "index.ts",
+  "main": "eslint.config.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Jordan Welch",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.12.0",
+    "@stylistic/eslint-plugin": "^2.9.0",
+    "@typescript-eslint/eslint-plugin": "^8.8.0",
+    "@typescript-eslint/parser": "^8.8.0",
+    "eslint-plugin-vue": "^9.28.0"
+  },
+  "peerDependencies": {
+    "eslint": ">= 9"
+  }
 }
