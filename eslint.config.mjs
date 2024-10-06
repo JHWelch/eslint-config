@@ -41,49 +41,44 @@ export default [{
   },
 
   rules: {
-    'comma-dangle': ['error', 'always-multiline'],
-
-    'no-console': ['error', {
-      allow: ['warn', 'error'],
-    }],
-
+    // Stylistic rules
+    '@stylistic/comma-dangle': ['error', 'always-multiline'],
     '@stylistic/indent': ['error', 2],
-
-    '@stylistic/no-multiple-empty-lines': ['error', { max: 1 }],
-
-    '@stylistic/no-multi-spaces': 'error',
-
-    'quote-props': ['error', 'as-needed'],
-
-    'max-len': ['error', {
+    '@stylistic/max-len': ['error', {
       ignoreStrings: true,
       ignoreTrailingComments: true,
       ignoreUrls: true,
       tabWidth: 2,
     }],
-
-    'object-curly-spacing': ['error', 'always'],
-
-    quotes: ['error', 'single', {
+    '@stylistic/no-multi-spaces': 'error',
+    '@stylistic/no-multiple-empty-lines': ['error', { max: 1 }],
+    '@stylistic/object-curly-spacing': ['error', 'always'],
+    '@stylistic/quote-props': ['error', 'as-needed'],
+    '@stylistic/quotes': ['error', 'single', {
       avoidEscape: true,
     }],
+    '@stylistic/semi': ['error', 'never'],
+    '@stylistic/space-before-function-paren': ['error', 'always'],
 
-    semi: ['error', 'never'],
-    'space-before-function-paren': ['error', 'always'],
+    // Functional rules
+    'no-console': ['error', {
+      allow: ['warn', 'error'],
+    }],
 
+    // TypeScript rules
     '@typescript-eslint/no-unused-vars': ['error', {
       argsIgnorePattern: '^_',
       caughtErrorsIgnorePattern: '^_',
     }],
 
+    // Vue rules
     'vue/multi-word-component-names': 'off',
-
     'vue/comma-dangle': ['error', 'always-multiline'],
   },
 }, {
   files: ['**/*.vue'],
 
   rules: {
-    'max-len': 'off',
+    '@stylistic/max-len': 'off',
   },
 }]
