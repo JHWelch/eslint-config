@@ -59,6 +59,21 @@ export default [{
     }],
     '@stylistic/semi': ['error', 'never'],
     '@stylistic/space-before-function-paren': ['error', 'always'],
+    '@stylistic/padding-line-between-statements': ['error', {
+      blankLine: 'always',
+      prev: '*',
+      next: 'return',
+    }],
+    '@stylistic/member-delimiter-style': ['error', {
+      multiline: {
+        delimiter: 'none',
+      },
+      singleline: {
+        delimiter: 'comma',
+        requireLast: false,
+      },
+      multilineDetection: 'brackets',
+    }],
 
     // Functional rules
     'no-console': ['error', {
