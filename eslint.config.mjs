@@ -44,6 +44,10 @@ export default [{
     // Stylistic rules
     '@stylistic/comma-dangle': ['error', 'always-multiline'],
     '@stylistic/indent': ['error', 2],
+    '@stylistic/keyword-spacing': ['error', {
+      before: true,
+      after: true,
+    }],
     '@stylistic/max-len': ['error', {
       ignoreStrings: true,
       ignoreTrailingComments: true,
