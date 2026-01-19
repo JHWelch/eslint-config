@@ -23,7 +23,7 @@
     "@stylistic/eslint-plugin": "^5.7.0",
     "@typescript-eslint/eslint-plugin": "^8.32.0",
     "@typescript-eslint/parser": "^8.32.0",
-    "eslint-plugin-vue": "^9.33.0"
+    "eslint-plugin-vue": "^10.7.0"
   },
   "peerDependencies": {
     "eslint": ">= 9"
