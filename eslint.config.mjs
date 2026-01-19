@@ -37,8 +37,6 @@ export default [
 
     languageOptions: {
       parser: parser,
-      ecmaVersion: 5,
-      sourceType: 'script',
 
       parserOptions: {
         parser: '@typescript-eslint/parser',
@@ -46,7 +44,7 @@ export default [
     },
 
     rules: {
-    // Stylistic rules
+      // Stylistic rules
       '@stylistic/comma-dangle': ['error', 'always-multiline'],
       '@stylistic/indent': ['error', 2],
       '@stylistic/keyword-spacing': ['error', {
