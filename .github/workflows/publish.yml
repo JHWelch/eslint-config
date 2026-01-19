@@ -26,12 +26,14 @@ jobs:
     - name: Install Node.js
       uses: actions/setup-node@v6
       with:
-        node-version: 24
+        node-version: 20
         registry-url: 'https://registry.npmjs.org'
 
     - id: bump-version
       name: Bump version
       run: |
+        git config --global user.name ${{ github.actor }}
+        git config --global user.email ${{ github.actor }}@users.noreply.github.com
         version=$(npm --tag-version-prefix="" version ${{ github.event.inputs.release_type }})
         echo "version=$version" >> $GITHUB_ENV
 
