@@ -19,17 +19,18 @@
   },
   "homepage": "https://github.com/JHWelch/eslint-config#readme",
   "dependencies": {
-    "@eslint/js": "^9.12.0",
-    "@stylistic/eslint-plugin": "^5.7.0",
-    "@typescript-eslint/eslint-plugin": "^8.32.0",
-    "@typescript-eslint/parser": "^8.32.0",
-    "eslint-plugin-vue": "^10.7.0",
-    "vue-eslint-parser": "^10.2.0"
+    "@eslint/eslintrc": "^3.3.5",
+    "@eslint/js": "^10.0.1",
+    "@stylistic/eslint-plugin": "^5.10.0",
+    "@typescript-eslint/eslint-plugin": "^8.57.0",
+    "@typescript-eslint/parser": "^8.57.0",
+    "eslint-plugin-vue": "^10.8.0",
+    "vue-eslint-parser": "^10.4.0"
   },
   "peerDependencies": {
-    "eslint": ">= 9"
+    "eslint": ">= 10"
   },
   "devDependencies": {
-    "eslint": "9.39.2"
+    "eslint": "^10.0.3"
   }
 }
